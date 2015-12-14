@@ -4,36 +4,129 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<title>Star Trek Online - Foundry Mission Database</title>
+
 	<style>
-	body{
-		background-color: #1e2b37;
-		color: #979797;
-	}
+
+		form.missiondata{
+			background-color: #F0F0F0 ;
+			padding: 1em;
+		}
+
+		input#lastupdate{
+			width: 173px;
+		}
 	</style>
+
+	<title>Star Trek Online - Foundry Mission Database</title>
 </head>
 <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div>
+				<ul class="nav navbar-nav">
+					<li class="navbutton"><a href="../index.html">Home</a></li>
+					<li class="navbutton"><a href="../random/">Random</a></li>
+					<li class="navbutton"><a href="../submit/">Submit</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="navsearch">
+						<form class="navbar-form navbar-left" role="search">
+						    <div class="form-group">
+						        <input type="text" class="form-control" placeholder="Search">
+						    </div>
+						    <button type="submit" class="btn btn-default">
+						    	<span class="glyphicon glyphicon-search"></span>
+						    </button>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>	
+
 	<div class="container">
 		<div class="jumbotron">
-			<h1>Star Trek Online</h1>
-			<h3>Foundry Mission Database</h3>
+			<h1 id="stobannertext">Star Trek Online</h1>
+			<h3 id="databasebannertext">Foundry Mission Database</h3>
+		</div>	
+
+		<div>
+			<h2>Mission Submission</h2>
+			<form class="missiondata">
+				<div class="row">
+					<div class="col-md-6">
+						<p>Name:<input type="text" class="form-control"></p>
+						<p>Code: <input type="text"class="form-control"></p>
+						<div class="form-group">
+							<label for="faction">Faction:</label>
+							<select class="form-control" id="faction">
+								<option>Federation</option>
+								<option>Klingon</option>
+							</select>
+						</div>
+					</div><!--col-mid-6-->
+
+					<div class="col-md-6">
+						<p>Min Level: <input type="" class="form-control"></p>
+						<div class="form-group">
+							<label for="missionlength">Length:</label>
+							<select class="form-control" id="missionlength">
+								<option>Less than 15 minutes</option>
+								<option>15-30 minutes</option>
+								<option>30 minutes - 1 hour</option>
+								<option>1 - 2 hours</option>
+								<option>More than 2 hours</option>
+							</select>
+						</div>	
+						<div class="container-fluid">					
+							<div class="row">
+								<div class="col-md-6"><p>First Published: <input type="date" class="form-control"></p></div>
+								<div class="col-md-6"><p>Last Update: <input type="date" class="form-control"></p></div>
+							</div>
+						</div>
+					</div><!--col-md-6-->					
+				</div><!--row-->
+				<div class="row">
+					<div class="col-md-12">
+						<p>Description</p>
+						<textarea class="form-control" rows="5" id="missiondescription"></textarea>
+					</div>
+				</div><!--row-->
+				<div class="row">
+					<div class="col-md-12">
+						<p>Gameplay Tags</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						Selected:
+						<div class="list-group">
+						</div>
+					</div>
+					<div class="col-md-6">
+						Available:
+						<div class="list-group">
+							<a href="#" class="list-group-item">Space Combat</a>
+							<a href="#" class="list-group-item">Ground Combat</a>
+							<a href="#" class="list-group-item">Single Player</a>
+							<a href="#" class="list-group-item">Team Play</a>
+						</div>						
+					</div>					
+				</div>
+			</form>
 		</div>
 
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div>
-					<ul class="nav navbar-nav">
-						<li><a href="../index.html">Home</a></li>						
-						<li><a href="../submit/">Submit</a></li>
-						<li><a href="../random/">Random</a></li>
-						<li class="navbar-btn pull-right"><a href="../search/">Search</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-
 	</div><!--container-->
+
+	<div class="container pagefooter">
+		<footer class="pagefooter">
+			<p>
+				Copyright © 2016. Website by Zorbane and RogueEnterprise for Star Trek Online.  Star Trek Online logo and all related images are registered trademarks or trademarks of <a href="http://arcgames.com">Perfect World Entertainment</a>.
+			</p>
+		</footer>
+	</div>	
 </body>
 </html>
