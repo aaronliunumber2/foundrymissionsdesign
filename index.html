@@ -30,6 +30,16 @@
 		border-top: 1px gray solid;
 		background-color: #001;
 	}
+
+	.bannerimage img{
+		display: block;
+		margin:0 auto;
+	}
+
+	#databasebannertext{
+		margin-bottom: 0;
+	}
+
 	</style>
 </head>
 <body>
@@ -60,12 +70,16 @@
 
 	<div class="container">
 		<div class="jumbotron">
-			<h1>Star Trek Online</h1>
-			<h3>Foundry Mission Database</h3>
+			<h1 id="stobannertext">Star Trek Online</h1>
+			<h3 id="databasebannertext">Foundry Mission Database</h3>
 		</div>		
 
+		<figure class="bannerimage">
+			<img src="http://www.mmogames.com/wp-content/uploads/2014/01/Foundry.jpg">
+		</figure>
+
 		<article>
-			<section class="missions">
+			<section class="missions col-md-6">
 				<header><h2>Featured Missions</h2></header>
 				<ul class="list-group">
 					<li class="list-group-item"><a href="missions/1/">Duritanium Man</a> - By: <a href="author/zorbane">Zorbane</a> - Fed</li>
@@ -73,7 +87,7 @@
 					<li class="list-group-item"><a href="missions/3/">Jello Floor</a> - By: <a href="author/rogueenterprise">RogueEnterprise</a> - Fed</li>
 				</ul>
 			</section><!-- Missions -->
-			<section class="missions">
+			<section class="missions col-md-6">
 				<header><h2>Recently Updated</h2></header>
 				<ul class="list-group">
 					<li class="list-group-item"><a href="missions/1/">Duritanium Man</a> - By: <a href="author/zorbane">Zorbane</a> - Fed</li>
@@ -83,8 +97,9 @@
 			</section>			
 		</article>
 
-
-
+		<footer id="pagefooter">
+			Copyright © 2016. Website by Zorbane and RogueEnterprise for Star Trek Online.  Star Trek Online logo and all related images are registered trademarks or trademarks of <a href="http://arcgames.com">Perfect World Entertainment</a>.
+		</footer>
 	</div><!--container-->
 </body>
 </html>
