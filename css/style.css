@@ -29,3 +29,7 @@
 	#databasebannertext{
 		margin-bottom: 0;
 	}
+
+	footer#pagefooter{
+		font-size:80%;
+	}
