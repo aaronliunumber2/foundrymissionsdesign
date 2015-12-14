@@ -12,27 +12,57 @@
 		background-color: #1e2b37;
 		color: #979797;
 	}
+
+	.jumbotron{
+		background-color: #001;
+	}
+
+
+
+	nav.navbar{
+		text-transform: uppercase;
+		font-weight: bold;
+		background-color: #001
+	}
+
+	.list-group-item{
+		border: none;
+		border-top: 1px gray solid;
+		background-color: #001;
+	}
 	</style>
 </head>
 <body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div>
+				<ul class="nav navbar-nav">
+					<li class="navbutton"><a href="index.html">Home</a></li>
+					<li class="navbutton"><a href="random/">Random</a></li>						
+					<li class="navbutton"><a href="submit/">Submit</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="navsearch">
+						<form class="navbar-form navbar-left" role="search">
+						    <div class="form-group">
+						        <input type="text" class="form-control" placeholder="Search">
+						    </div>
+						    <button type="submit" class="btn btn-default">
+						    	<span class="glyphicon glyphicon-search"></span>
+						    </button>
+						</form>
+					</li>
+				</ul>					
+			</div>
+		</div>
+	</nav>
+
 	<div class="container">
 		<div class="jumbotron">
 			<h1>Star Trek Online</h1>
 			<h3>Foundry Mission Database</h3>
-		</div>
-
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div>
-					<ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="search/">Search</a></li>
-						<li><a href="submit/">Submit</a></li>
-						<li><a href="random/">Random</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+		</div>		
 
 		<article>
 			<section class="missions">
