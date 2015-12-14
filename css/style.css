@@ -1,0 +1,31 @@
+	body{
+		background-color: #1e2b37;
+		color: #979797;
+	}
+
+	.jumbotron{
+		background-color: #001;
+	}
+
+
+
+	nav.navbar{
+		text-transform: uppercase;
+		font-weight: bold;
+		background-color: #001
+	}
+
+	li.list-group-item{
+		border: none;
+		border-top: 1px gray solid;
+		background-color: #001;
+	}
+
+	.bannerimage img{
+		display: block;
+		margin:0 auto;
+	}
+
+	#databasebannertext{
+		margin-bottom: 0;
+	}
