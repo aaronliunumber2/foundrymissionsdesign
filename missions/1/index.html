@@ -4,11 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 	<link rel="stylesheet" href="../../css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<title>Duritanium Man - Star Trek Online - Foundry Mission Database</title>
 	<style>
+
+		div.missionbanner img{
+			width:100%;
+			padding-bottom: 1em;
+		}
 
 		div.missiondescription, aside.missioninfo
 		{
@@ -22,10 +29,21 @@
 			border-radius: 5px;			
 		}
 
-		 aside.missioninfo p{
+		aside.missioninfo p{
 			margin: 0px;
 			margin-left: 5px;
 		}	
+
+		img.thumbnail{
+			width: 150px;
+			height: 150px;
+			display: inline-block;
+		}
+
+		div#links{
+			display: block;
+		}
+
 	</style>
 </head>
 <body>
@@ -54,11 +72,8 @@
 	</nav>
 	<div class="container">
 		<article>
-			<div class="row">
-				<div class="col-md-12">
-					<header><h1>Duritanium Man</h1></header>
-				</div>
-			</div>
+			<header><h1>Duritanium Man</h1></header>
+			<div class="missionbanner"><img src="img/banner.jpg" alt="Duritanium Man Banner"></div>
 			<div class="row">
 				<section class="col-md-12 mission">
 					<aside class="missioninfo">
@@ -78,13 +93,32 @@
 					</div>
 				</section>			
 			</div>
-		</article>
+			<div class="screenshots">
+				<div id="links">
+				    <a href="img/1.jpg" title="Duritanium Man Screenshot" data-gallery>
+				        <img class="thumbnail" src="img/1.jpg" alt="Duritanium Man Screenshot">
+				    </a>
+				    <a href="img/2.jpg" title="Duritanium Man Screenshot" data-gallery>
+				        <img class="thumbnail" src="img/2.jpg" alt="Duritanium Man Screenshot">
+				    </a>
+				    <a href="img/3.jpg" title="Duritanium Man Screenshot" data-gallery>
+				        <img class="thumbnail" src="img/3.jpg" alt="Duritanium Man Screenshot">
+				    </a>
+				    <a href="img/4.jpg" title="Duritanium Man Screenshot" data-gallery>
+				        <img class="thumbnail" src="img/4.jpg" alt="Duritanium Man Screenshot">
+				    </a>
+				    <a href="img/5.jpg" title="Duritanium Man Screenshot" data-gallery>
+				        <img class="thumbnail" src="img/5.jpg" alt="Duritanium Man Screenshot">
+				    </a>				    
+				</div>				
+			</div>
+		</article>		
 		<article class="reviews">
 			<header><h1>Reviews</h1></header>
 			<section class="review">
 					<div><img src="../../images/5star.PNG"><a href="../../author/rogueenterprise/" class="user">RogueEnterprise</a> on 12/14/2015 8:46:11pm</div>
 					<p>Best mission I've ever played.  Everyone should play this mission before anything else.  You won't regret it!  Only thing missing was forcing the player to die.</p>
-			</section>			
+			</section>
 			<section class="review">
 					<div><img src="../../images/5star.PNG"><a href="../../author/bazag/" class="user">Bazag</a> on 11/14/2015 8:46:11pm</div>
 					<p>An excellent mission, suitable for the Australian Star Trek Online player with good taste.  I give this five stabs out of five.</p>
@@ -94,5 +128,40 @@
 			Copyright © 2016. Website by Zorbane and RogueEnterprise for Star Trek Online.  Star Trek Online logo and all related images are registered trademarks or trademarks of <a href="http://arcgames.com">Perfect World Entertainment</a>.
 		</footer>			
 	</div>
-
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+	<div id="blueimp-gallery" class="blueimp-gallery">
+	    <!-- The container for the modal slides -->
+	    <div class="slides"></div>
+	    <!-- Controls for the borderless lightbox -->
+	    <h3 class="title"></h3>
+	    <a class="prev">‹</a>
+	    <a class="next">›</a>
+	    <a class="close">×</a>
+	    <a class="play-pause"></a>
+	    <ol class="indicator"></ol>
+	    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+	    <div class="modal fade">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" aria-hidden="true">&times;</button>
+	                    <h4 class="modal-title"></h4>
+	                </div>
+	                <div class="modal-body next"></div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default pull-left prev">
+	                        <i class="glyphicon glyphicon-chevron-left"></i>
+	                        Previous
+	                    </button>
+	                    <button type="button" class="btn btn-primary next">
+	                        Next
+	                        <i class="glyphicon glyphicon-chevron-right"></i>
+	                    </button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>		
+	<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+	<script src="js/bootstrap-image-gallery.min.js"></script>
 </body>
