@@ -1,7 +1,14 @@
 	body{
 		background-color: #1e2b37;
-		color: #979797;
+		color: #979797;		
+	  padding-top: 60px;
 	}
+
+	@media (max-width: 979px) {
+	  body {
+	    padding-top: 0px;
+	  }
+	}	
 
 	.jumbotron{
 		background-color: #001;
@@ -32,4 +39,8 @@
 
 	footer#pagefooter{
 		font-size:80%;
+	}
+
+	span.fed{
+		color: #3333CC;
 	}

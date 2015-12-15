@@ -17,10 +17,15 @@
 
 		input#lastupdate{
 			width: 173px;
+		}	
+
+		div.gameplay-tags{
+			max-height: 300px;
+			overflow-y: scroll;
 		}
 	</style>
 
-	<title>Star Trek Online - Foundry Mission Database</title>
+	<title>Submit Mission - Star Trek Online - Foundry Mission Database</title>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -48,13 +53,8 @@
 	</nav>	
 
 	<div class="container">
-		<div class="jumbotron">
-			<h1 id="stobannertext">Star Trek Online</h1>
-			<h3 id="databasebannertext">Foundry Mission Database</h3>
-		</div>	
-
 		<div>
-			<h2>Mission Submission</h2>
+			<h2>Submit a Foundry Mission</h2>
 			<form class="missiondata">
 				<div class="row">
 					<div class="col-md-6">
@@ -103,30 +103,27 @@
 				<div class="row">
 					<div class="col-md-6">
 						Selected:
-						<div class="list-group">
+						<div class="list-group gameplay-tags">
 						</div>
 					</div>
 					<div class="col-md-6">
 						Available:
-						<div class="list-group">
+						<div class="list-group gameplay-tags">
 							<a href="#" class="list-group-item">Space Combat</a>
 							<a href="#" class="list-group-item">Ground Combat</a>
 							<a href="#" class="list-group-item">Single Player</a>
 							<a href="#" class="list-group-item">Team Play</a>
+							<a href="#" class="list-group-item">Puzzle</a>
+							<a href="#" class="list-group-item">Quarters</a>
 						</div>						
 					</div>					
 				</div>
+				<button type="button" class="btn btn-default">Submit</button>
 			</form>
 		</div>
-
-	</div><!--container-->
-
-	<div class="container pagefooter">
-		<footer class="pagefooter">
-			<p>
-				Copyright © 2016. Website by Zorbane and RogueEnterprise for Star Trek Online.  Star Trek Online logo and all related images are registered trademarks or trademarks of <a href="http://arcgames.com">Perfect World Entertainment</a>.
-			</p>
+		<footer id="pagefooter">
+			Copyright © 2016. Website by Zorbane and RogueEnterprise for Star Trek Online.  Star Trek Online logo and all related images are registered trademarks or trademarks of <a href="http://arcgames.com">Perfect World Entertainment</a>.
 		</footer>
-	</div>	
+	</div><!--container-->
 </body>
 </html>
