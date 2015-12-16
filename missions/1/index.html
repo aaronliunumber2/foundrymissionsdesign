@@ -44,6 +44,10 @@
 			display: block;
 		}
 
+		select#reviewrating{
+			width: 100px;
+		}
+
 	</style>
 </head>
 <body>
@@ -80,7 +84,8 @@
 						<p>Author: <a href="/author/zorbane/">Zorbane</a></p>
 						<p>Faction: <span class="fed">Federation</span></p>
 						<p>Level: 30+</p><p>Length: 30 minutes - 1hour</p>
-						<p>Code: ST-12345679</p>				
+						<p>Code: ST-12345679</p>
+						<p>User Reviews: 5 out of 5 stars (2 reviews)
 						<p>First Published: 06/06/2014</p>
 						<p>Last Updated: 06/06/2014</p>
 						<p>Tags: Ground Combat, Space Combat</p>
@@ -118,11 +123,30 @@
 			<section class="review">
 					<div><img src="../../images/5star.PNG"><a href="../../author/rogueenterprise/" class="user">RogueEnterprise</a> on 12/14/2015 8:46:11pm</div>
 					<p>Best mission I've ever played.  Everyone should play this mission before anything else.  You won't regret it!  Only thing missing was forcing the player to die.</p>
+					<hr/>
 			</section>
 			<section class="review">
 					<div><img src="../../images/5star.PNG"><a href="../../author/bazag/" class="user">Bazag</a> on 11/14/2015 8:46:11pm</div>
 					<p>An excellent mission, suitable for the Australian Star Trek Online player with good taste.  I give this five stabs out of five.</p>
+					<hr/>
 			</section>		
+			<section>
+				<header><h3>Add a Review</h3></header>				
+				<form>					
+					<div class="form-group">
+						<label for="reviewrating">Rating:</label>
+						<select class="form-control" id="reviewrating">
+							<option>1*</option>
+							<option>2*</option>
+							<option>3*</option>
+							<option>4*</option>
+							<option>5</option>
+						</select>
+					</div>		
+					<textarea class="form-control" rows="5" id="missiondescription"></textarea><br/>
+					<button type="button" class="btn btn-default">Submit</button>
+				</form>
+			</section>
 		</article>
 		<footer id="pagefooter">
 			Copyright © 2016. Website by Zorbane and RogueEnterprise for Star Trek Online.  Star Trek Online logo and all related images are registered trademarks or trademarks of <a href="http://arcgames.com">Perfect World Entertainment</a>.
