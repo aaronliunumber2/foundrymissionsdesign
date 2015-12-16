@@ -11,7 +11,7 @@
 	}	
 
 	.jumbotron{
-		background-color: #001;
+		background-color: black;
 	}
 
 
@@ -38,9 +38,14 @@
 	}
 
 	footer#pagefooter{
+		margin-top: 2em;
 		font-size:80%;
 	}
 
 	span.fed{
 		color: #3333CC;
+	}
+
+	li.minornavbutton{
+		font-size: 75%;
 	}
