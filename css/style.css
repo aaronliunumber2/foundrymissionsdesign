@@ -15,7 +15,6 @@
 	}
 
 
-
 	nav.navbar{
 		text-transform: uppercase;
 		font-weight: bold;
@@ -49,3 +48,65 @@
 	li.minornavbutton{
 		font-size: 75%;
 	}
+
+	/* Submit mission */
+
+	form.missiondata{
+	    background-color: #F0F0F0;
+		padding: 1em;
+	}
+
+	input#lastupdate{
+		width: 173px;
+	}	
+
+	div.gameplay-tags{
+		max-height: 300px;
+		overflow-y: scroll;
+	}
+
+	/* Mission Details */
+
+	div.missionbanner img{
+		width:100%;
+		padding-bottom: 1em;
+	}
+
+	div.missiondescription, aside.missioninfo
+	{
+		color: #E8E8E8  ;
+	}
+
+	aside.missioninfo{
+		width:30%;
+		float:right;
+		border: 1px gray solid;
+		border-radius: 5px;			
+	}
+
+	aside.missioninfo p{
+		margin: 0px;
+		margin-left: 5px;
+	}
+
+	div.screenshots{
+		margin-top: 1em;
+	}
+
+	.thumbnail{
+		width: 150px;
+		height: 150px;
+		display: inline-block;
+	}
+
+	div#screenshotlinks{
+		display: block;
+	}
+
+	select#reviewrating{
+		width: 100px;
+	}
+
+	div.container{
+		background-color: #001;
+	}	
